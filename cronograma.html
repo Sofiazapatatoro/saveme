@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/cronograma.css">
+    <title>Cronograma - Save Me</title>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">Save<span>Me</span></a>
+    <ul class="navbar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cronograma.html">Cronograma</a></li>
+        <li><a href="conocelos.html">Conócelos</a></li>
+    </ul>
+</header>
+
+<!-- Sección del Cronograma -->
+<section class="schedule">
+    <h2>Cronograma de Actividades</h2>
+    <div class="schedule-container">
+        <!-- Evento 1 -->
+        <div class="schedule-item" onclick="toggleDetails(this)">
+            <div class="event-date">10 Oct 2024</div>
+            <div class="event-details">
+                <h3>Evento de Conservación</h3>
+                <p>Encuentro para discutir temas de conservación en peligro de extinción.</p>
+            </div>
+        </div>
+        <!-- Evento 2 -->
+        <div class="schedule-item" onclick="toggleDetails(this)">
+            <div class="event-date">15 Oct 2024</div>
+            <div class="event-details">
+                <h3>Jornada de Limpieza</h3>
+                <p>Campaña de limpieza y reforestación en áreas protegidas.</p>
+            </div>
+        </div>
+        <!-- Añade más eventos aquí -->
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

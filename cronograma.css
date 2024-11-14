@@ -1,0 +1,59 @@
+/* Estilos para el Cronograma */
+.schedule {
+    padding: 40px 10%;
+    background-color: #f5f5f5;
+}
+
+.schedule h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-item:hover {
+    background-color: #e0f7fa;
+}
+
+.event-date {
+    flex-shrink: 0;
+    width: 100px;
+    font-weight: bold;
+    color: var(--hover-color);
+}
+
+.event-details {
+    margin-left: 20px;
+}
+
+.event-details h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.event-details p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    display: none; /* Oculto por defecto */
+}
+
+.schedule-item.active .event-details p {
+    display: block;
+}

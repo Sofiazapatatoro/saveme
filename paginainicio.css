@@ -1,0 +1,179 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #a9fff1;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #000000;
+}
+
+header .navbar {
+    list-style: none;
+}
+
+header .navbar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+    color: #a9fff1;
+}
+
+/* Sección de inicio */
+section.inicio {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+section.inicio .text span {
+    display: block;
+    font-size: 18px;
+    color: #000000;
+}
+
+section.inicio .text h1 {
+    font-size: 48px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+section.inicio .text h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+section.inicio .text p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: 400px;       /* Altura fija */
+    object-fit: cover;   /* Recorta la imagen para adaptarse al contenedor */
+    max-height: 400px;
+}
+
+/* Footer */
+footer {
+    background-color: #a9fff1;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-logo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+footer .copyright h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+footer .copyright p {
+    font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* Contenedor de texto y carrusel alineados horizontalmente */
+.inicio-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Texto a la izquierda */
+.inicio-content .text {
+    flex: 1;
+    max-width: 50%; /* Ajuste del ancho para el texto */
+}
+
+/* Carrusel de imágenes a la derecha */
+.carousel {
+    flex: 1;
+    max-width: 50%; /* Ajuste del ancho para el carrusel */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .inicio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-content .text,
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-inner img {
+        height: auto;
+    }
+}
